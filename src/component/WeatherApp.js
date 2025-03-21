@@ -6,7 +6,7 @@ const WeatherApp = () => {
   const inputref = useRef();
   const [weather, setWeather] = useState({});
   const [forecast, setForecast] = useState([]);
-  const [isDarkMode, setIsDarkMode] = useState(false);  // Dark mode state
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const API_KEY = "410bd85926a9c9d723995eef0fedd39c";
 
