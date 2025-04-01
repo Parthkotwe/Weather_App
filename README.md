@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+Weather App
+Overview
+This weather app provides real-time weather information for any city. The app fetches weather data through the OpenWeatherMap API and displays details such as the current temperature, weather conditions, and a 5-day forecast. The app also allows users to toggle between light and dark modes for a better user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Search for weather data by city name.
 
-## Available Scripts
+Display current weather information such as temperature, humidity, wind speed, and weather condition.
 
-In the project directory, you can run:
+Show a 5-day weather forecast.
 
-### `npm start`
+Toggle between dark mode and light mode.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Real-time weather updates from OpenWeatherMap API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies Used
+React: JavaScript library for building the user interface.
 
-### `npm test`
+Axios: Promise-based HTTP client for fetching weather data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tailwind CSS: Utility-first CSS framework used for styling the components.
 
-### `npm run build`
+OpenWeatherMap API: External API used to fetch weather data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prerequisites
+Node.js: Required to run the React project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm/yarn: Required to install project dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Installation
+Clone the repository:
 
-### `npm run eject`
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/weather-app.git
+Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy
+Edit
+cd weather-app
+Install the dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy
+Edit
+npm install
+Set up the API key:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create an account on OpenWeatherMap and get an API key.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Replace the API_KEY constant in the code with your API key.
 
-## Learn More
+js
+Copy
+Edit
+const API_KEY = "your_api_key_here";
+Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
+Copy
+Edit
+npm start
+Open the app in your browser at http://localhost:3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usage
+Search for Weather
+Enter the name of a city in the search box and click the "Search" button.
 
-### Code Splitting
+The app will fetch the weather data for the entered city and display:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The current temperature, maximum and minimum temperature, weather condition, wind speed, and humidity.
 
-### Analyzing the Bundle Size
+A 5-day weather forecast with the date, temperature, and condition for each day.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Toggle Dark Mode
+Click the "Dark Mode" button to switch to dark mode, or "Light Mode" to switch back to light mode.
 
-### Making a Progressive Web App
+The app will toggle between dark and light modes, making it easier to use in different environments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Example Output
+For a city like London, the app will show:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+mathematica
+Copy
+Edit
+Weather in London:
+- Temperature: 15°C
+- Max Temp: 18°C
+- Min Temp: 12°C
+- Weather: Clear Sky
+It will also display a 5-day forecast with temperatures and weather conditions.
